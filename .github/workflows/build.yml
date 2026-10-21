@@ -12,8 +12,8 @@ jobs:
       - name: Build
         run: |
           echo "sdk.dir=$ANDROID_HOME" > local.properties
-          wget https://services.gradle.org/distributions/gradle-8.7-bin.zip
-          unzip -q gradle-8.7-bin.zip
+          wget https://services.gradle.org/distributions/gradle-8.11.1-bin.zip
+          unzip -q gradle-8.11.1-bin.zip
           ./gradle-8.7/bin/gradle assembleDebug
       - uses: actions/upload-artifact@v4
         with:
